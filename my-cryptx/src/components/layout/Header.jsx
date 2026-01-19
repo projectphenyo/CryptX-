@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-<header className="h-16 bg-card/50 backdrop-blur-sm border-b border-border flex items-center justify-between px-4 lg:px-6 sticky top-0 z-40 ml-64">
+<header className="h-16 bg-gray-900 text-white bg-card/50 backdrop-blur-sm border-b border-border flex items-center justify-between px-4 lg:px-6 sticky top-0 z-40 ml-64">
   {/* Left - Search */}
   <div className="flex items-center flex-1 max-w-md">
     <div className="relative w-full">
@@ -93,18 +93,7 @@ const Header = () => {
         <p className="text-sm font-medium text-foreground truncate">Project Phenyo</p>
         <p className="text-xs text-muted-foreground truncate">projectphenyo@gmail.com</p>
       </div>
-      {/* Logout icon */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="hidden lg:block text-muted-foreground hover:text-destructive transition-colors"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 11-4 0v-1m0-10V5a2 2 0 114 0v1" />
-      </svg>
+      
     </div>
   </div>
 </header>   

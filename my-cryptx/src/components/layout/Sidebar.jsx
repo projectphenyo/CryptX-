@@ -5,9 +5,32 @@ import { HomeIcon,ChartBarIcon,CreditCardIcon,WalletIcon,InboxIcon,Cog6ToothIcon
 const Sidebar = () => {
   return (
        <aside className="fixed top-0 left-0 h-screen w-64 bg-gray-900 text-white p-6">
-        <span className="hidden lg:block text-foreground font-bold text-xl mb-6">
-            Crypt<span className="text-blue-500">X</span>
-          </span>
+        {/* Logo */}
+   <div className="flex items-start gap-2 h-16 px-6 ">
+  {/* CX Logo */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-blue-500"
+  >
+    <text
+      x="50%"
+      y="50%"
+      textAnchor="middle"
+      dominantBaseline="middle"
+      fontSize="10"
+      fontWeight="700"
+      fill="white"
+    >
+      CX
+    </text>
+  </svg>
+
+  {/* Heading */}
+  <span className="hidden lg:block text-foreground font-bold text-xl">
+    Crypt<span className="text-blue-500">X</span>
+  </span>
+</div>
 
       <nav>
         <ul className="space-y-4">
