@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 const Header = () => {
   return (
 <header className="h-16 bg-card/50 backdrop-blur-sm border-b border-border flex items-center justify-between px-4 lg:px-6 sticky top-0 z-40 ml-64">
@@ -53,27 +55,40 @@ const Header = () => {
       <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary animate-pulse" />
     </button>
 
-    {/* Currency Selector */}
-    <button className="hidden sm:flex items-center gap-2 h-10 px-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
-      <span className="text-sm font-medium text-foreground">USD</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="14"
-        height="14"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="text-muted-foreground"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
+    {/* Information Settings */}
+    <button className="hidden sm:flex items-center justify-center h-10 w-10 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    className="text-muted-foreground"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"
+    />
+  </svg>
+</button>
+   
 
     {/* Profile Block */}
     <div className="flex items-center gap-3 p-2 rounded-lg hover:bg-sidebar-accent transition-colors cursor-pointer">
-      <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary/20 to-cyan-400/20 flex items-center justify-center">
-        <span className="text-primary font-semibold text-sm">PP</span>
-      </div>
+     <div className="relative w-9 h-9 rounded-full overflow-hidden flex items-center justify-center">
+    <img
+      src="/assets/pen.png"  
+      alt="Penguin"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
+    <span className="relative text-white font-semibold text-sm">PP</span>
+  </div>
+
+
+     
       <div className="hidden lg:block flex-1 min-w-0">
         <p className="text-sm font-medium text-foreground truncate">Project Phenyo</p>
         <p className="text-xs text-muted-foreground truncate">projectphenyo@gmail.com</p>
