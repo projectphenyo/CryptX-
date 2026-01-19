@@ -1,4 +1,6 @@
 import React from 'react'
+import { HomeIcon,ChartBarIcon,CreditCardIcon,WalletIcon,InboxIcon,Cog6ToothIcon,ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
+
 
 const Sidebar = () => {
   return (
@@ -10,33 +12,35 @@ const Sidebar = () => {
       {/* <h1 className="text-2xl font-bold mb-8">CryptX</h1> */}
       <nav>
         <ul className="space-y-4">
-          <li className="hover:text-blue-400 cursor-pointer" active="overview" >Overview</li>
-          <li className="hover:text-blue-400 cursor-pointer">Charts</li>
-          <li className="hover:text-blue-400 cursor-pointer">Transactions</li>
-          <li className="hover:text-blue-400 cursor-pointer">Wallet</li>
-          <li className="hover:text-blue-400 cursor-pointer">Mail Box</li>
+          <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer text-blue-400 font-semibold" >
+            <HomeIcon className="h-5 w-5" />
+            <span>Overview</span>
+          </li>
+          <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
+            <ChartBarIcon className="h-5 w-5" />
+            <span>Charts</span>
+            </li>
+          <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
+            <CreditCardIcon className="h-5 w-5" />
+            <span>Transactions</span></li>
+          <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
+            <WalletIcon className="h-5 w-5" />
+            <span>Wallet</span></li>
+          <li className="flex items-center space-x-2 hover:text-blue-400 cursor-pointer">
+            <InboxIcon className="h-5 w-5" />
+            <span>Mail Box</span></li>
 
           <div className="pt-6 border-black mt-6 border-t border-sidebar-border space-y-1">
-          <li className="hover:text-blue-400 cursor-pointer">Settings</li>
-          <li className="hover:text-blue-400 cursor-pointer">Logout</li>
+          <li className="hover:text-blue-400 cursor-pointer">
+            <Cog6ToothIcon className="h-5 w-5 inline-block mr-2" />
+            <span>Settings</span>
+            </li>
+          <li className="hover:text-blue-400 cursor-pointer">
+            <ArrowRightEndOnRectangleIcon className="h-5 w-5 inline-block mr-2" />
+            <span>Logout</span></li>
             </div>
         </ul>
       </nav>
-
-       {/* <nav className="flex-1 px-2 lg:px-3 py-6 space-y-1 overflow-y-auto scrollbar-thin">
-        <div className="space-y-1">
-          <NavItem icon={<LayoutDashboard size={20} />} label="Dashboard" isActive />
-          <NavItem icon={<Wallet size={20} />} label="Wallet" />
-          <NavItem icon={<ArrowLeftRight size={20} />} label="Exchange" />
-          <NavItem icon={<PieChart size={20} />} label="Portfolio" />
-          <NavItem icon={<TrendingUp size={20} />} label="Markets" />
-        </div>
-
-        <div className="pt-6 mt-6 border-t border-sidebar-border space-y-1">
-          <NavItem icon={<Settings size={20} />} label="Settings" />
-          <NavItem icon={<HelpCircle size={20} />} label="Help Center" />
-        </div> */}
-      {/* </nav> */}
     </aside>
 
 
