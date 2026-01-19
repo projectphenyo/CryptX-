@@ -19,12 +19,6 @@ Tech stack: **JavaScript**, **HTML**, and **React**
 
 ---
 
-## 🚀 Live Demo
-👉 [View CryptX-Platform](cryptx0.netlify.app)  
-
-
----
-
 ## ⚙️ Installation
 
 1. **Clone the repository**
