@@ -20,7 +20,7 @@ Tech stack: **JavaScript**, **HTML**, and **React**
 ---
 
 ## 🚀 Live Demo
-👉 [View CryptX-Platform]()  
+👉 [View CryptX-Platform](cryptx0.netlify.app)  
 
 
 ---
